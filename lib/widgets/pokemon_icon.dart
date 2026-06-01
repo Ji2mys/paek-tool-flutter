@@ -2,6 +2,7 @@ import 'dart:math' as math;
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:paek_game_tool_flutter/l10n/app_localizations.dart';
 
 /// A widget that displays a Pokémon icon from the sprite sheet.
 ///
@@ -86,7 +87,7 @@ class _PokemonIconState extends State<PokemonIcon>
               'assets/poke.webp',
               width: widget.size,
               height: widget.size,
-              fit: BoxFit.none,
+              fit: BoxFit.contain,
               // Show only the first cell as a generic "back" placeholder.
               alignment: Alignment.topLeft,
             ),
@@ -206,7 +207,7 @@ class _PokemonIconState extends State<PokemonIcon>
           borderRadius: BorderRadius.circular(10),
         ),
         child: Text(
-          'Nvl. ${widget.level}',
+          AppLocalizations.of(context)!.lvl(widget.level ?? 0),
           style: TextStyle(
             fontSize: small ? 10 : 12,
             fontWeight: FontWeight.bold,
