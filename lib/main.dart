@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:paek_game_tool_flutter/widgets/pokemon_icon.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:paek_game_tool_flutter/l10n/app_localizations.dart';
+
+import 'package:paek_game_tool_flutter/pages/home_page.dart';
 
 void main() {
   runApp(const MainApp());
@@ -10,18 +13,16 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: PokemonIcon(
-            iconIdx: 2,
-            level: 10,
-            canEvolve: false,
-            hasFainted: false,
-            size: 64,
-          ),
-        ),
-      ),
+    return MaterialApp(
+      title: 'PAEK Game Tool',
+      localizationsDelegates: [
+        AppLocalizations.delegate,
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
+      supportedLocales: [const Locale('es'), const Locale('en')],
+      home: HomePage(),
     );
   }
 }

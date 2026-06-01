@@ -1,0 +1,10 @@
+{
+  "pokemonType": "{type, select, bug{Bug} dark{Dark} dragon{Dragon} electric{Electric} fairy{Fairy} fire{Fire} fighting{Fighting} flying{Flying} grass{Grass} ground{Ground} ghost{Ghost} ice{Ice} normal{Normal} poison{Poison} psychic{Psychic} rock{Rock} steel{Steel} water{Water} other{Unknown}}",
+  "lvl": "Lvl. {level}",
+  "hp": "HP",
+  "pp": "PP",
+  "trainerLevel": "TL {level}",
+  "city": "{city, select, palletTown{Pallet Town} viridianCity{Viridian City} pewterCity{Pewter City} ceruleanCity{Cerulean City} saffronCity{Saffron City} vermillionCity{Vermillion City} celadonCity{Celadon City} fuchsiaCity{Fuchsia City} lavenderTown{Lavender Town} cinnabarIsland{Cinnabar Island} other{Unknown}}",
+  "nature": "{nature, select, hardy{Hardy} docile{Docile} serious{Serious} bashful{Bashful} quirky{Quirky} lonely{Lonely} brave{Brave} adamant{Adamant} naughty{Naughty} bold{Bold} relaxed{Relaxed} impish{Impish} lax{Lax} timid{Timid} hasty{Hasty} jolly{Jolly} naive{Naive} modest{Modest} mild{Mild} quiet{Quiet} rash{Rash} calm{Calm} gentle{Gentle} sassy{Sassy} careful{Careful} other{Unknown}}",
+  "pkmnName": "{region, select, alola{Alolan {name}} galar{Galarian {name}} other{{name}}}"
+}

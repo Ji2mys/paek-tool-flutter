@@ -1,6 +1,6 @@
 name: paek_game_tool_flutter
 description: "A new Flutter project."
-publish_to: 'none'
+publish_to: "none"
 version: 0.1.0+1
 
 environment:
@@ -9,15 +9,25 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  intl: any
+  json_annotation: ^4.11.0
+  path_provider: ^2.1.5
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^6.0.0
+  build_runner: ^2.15.0
+  json_serializable: ^6.13.2
 
 flutter:
+  generate: true
   uses-material-design: true
 
   assets:
     - assets/poke.webp
     - assets/pokemon-icons.webp
+    - assets/type-icons.webp
+    - assets/data/game-data.json
